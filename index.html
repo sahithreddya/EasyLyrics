@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>txt-to-lrc</title>
+  
+  <script type="text/javascript" src="js/index.js"></script>
+  
+  
+  
+</head>
+
+<body>
+
+  <!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: dodgerblue;
+    }
+
+    .column {
+      border: 2px black solid;
+      float: left;
+      padding: 10px;
+      width: 33.33%;
+      height: 500px;
+      text-align: center;
+      overflow:hidden;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    p{
+      font-family:helvetica;
+      font-weight:bold;
+      background-color:grey;
+      display:inline-block;
+      border:2px solid black;
+      padding:3px;
+      width:250px;
+    }
+
+    h1 {
+      color: Red;
+      padding: 5px;
+      font-family: Calibri;
+      text-shadow: -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+
+    }
+
+    button {
+      font-family:"Lucida Console",sans-serif;
+      margin: 5px;
+    }
+    
+    a:link,a:visited{
+      color:black;
+      text-decoration:none;
+      font-family:helvetica;
+      font-weight:bold;
+      background-color:yellow;
+      padding:15px;
+      border:2px black solid;
+      border-radius:5px;
+      display:inline-block;
+      margin:10px;
+    }
+    textarea{border:2px solid black;}
+    a:hover,a:active{background-color:red;}
+  </style>
+</head>
+
+<body>
+  <h1 style="outline:3px black solid;display:inline-block;font-variant:small-caps;">Create a lyric(.lrc) file</h1>
+  <div>	
+    <div class="column">
+      <textarea rows="20" cols="30" form="txtform" id="input"></textarea><br>
+      <p>Title : <input type="text" id="title" /></p>
+      <p>Artist : <input type="text" id="artist" /></p>
+      <br><button id="convert" onclick="inputfunction()">Convert</button>
+    </div>
+
+    <div class="column" style="width:25%;border-right-style:none;border-left-style:none">
+      <h1 style="color:white" id="counter">-</h1>
+      <br>
+      <h1 id="countdown" style="font-size:400%;color:red">-
+        <h1>
+          <input type="text" id="ytvideo" value="Paste link here" style="color:grey"><button id="ytlink" onclick="displayvideo()">Go!</button><br>
+		<iframe id="ytframe" width"420" height"345" src = ""></iframe>
+    </div>
+    </div>
+
+    <div class="column">
+      <textarea style="background-color:powderblue;" cols="30" rows="20" id="outtxt" disabled></textarea><br>
+      <div style="margin:25px">
+        <button id="start" onclick="countdown();">Start</button>
+        <button id="next" onclick="next()">Next</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        <button id="stop" onclick="stop()">Stop</button><br>
+        <a href="" id="link" download="code.lrc">Download .lrc</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>
