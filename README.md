@@ -4,6 +4,9 @@ A .lrc file is used in some music players(Xiaomi default music player) to displa
 The file contains a timestamp before each line which matches the time of the vocals in the song.
 A youtube player is embedded in the page to help the user to sync with more precision.
 
+<img width="1052" alt="image" src="https://user-images.githubusercontent.com/25284768/149656891-f74dda8e-6a77-464b-9ca3-84286efe41ab.png">
+
+
 Future feature additions
 ------------------------
 
