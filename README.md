@@ -1,4 +1,4 @@
-# .txt-to-.lrc-converter
+# EasyLyrics
 A .txt file converter which takes in the song title, artist and song lyrics as input and combines them to make a downloadable lyric(.lrc) file.
 A .lrc file is used in some music players(Xiaomi default music player) to display the lyrics of a song in sync with the song playing. 
 The file contains a timestamp before each line which matches the time of the vocals in the song.
